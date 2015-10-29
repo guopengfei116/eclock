@@ -1,0 +1,136 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$calendar-name: 'calendar';
+$calendar-x: 104px;
+$calendar-y: 203px;
+$calendar-offset-x: -104px;
+$calendar-offset-y: -203px;
+$calendar-width: 104px;
+$calendar-height: 90px;
+$calendar-total-width: 522px;
+$calendar-total-height: 298px;
+$calendar-image: '../img/sprite_icon.png';
+$calendar: (104px, 203px, -104px, -203px, 104px, 90px, 522px, 298px, '../img/sprite_icon.png', 'calendar', );
+$clock-name: 'clock';
+$clock-x: 228px;
+$clock-y: 0px;
+$clock-offset-x: -228px;
+$clock-offset-y: 0px;
+$clock-width: 100px;
+$clock-height: 110px;
+$clock-total-width: 522px;
+$clock-total-height: 298px;
+$clock-image: '../img/sprite_icon.png';
+$clock: (228px, 0px, -228px, 0px, 100px, 110px, 522px, 298px, '../img/sprite_icon.png', 'clock', );
+$eclock-font-name: 'eclock_font';
+$eclock-font-x: 328px;
+$eclock-font-y: 0px;
+$eclock-font-offset-x: -328px;
+$eclock-font-offset-y: 0px;
+$eclock-font-width: 194px;
+$eclock-font-height: 42px;
+$eclock-font-total-width: 522px;
+$eclock-font-total-height: 298px;
+$eclock-font-image: '../img/sprite_icon.png';
+$eclock-font: (328px, 0px, -328px, 0px, 194px, 42px, 522px, 298px, '../img/sprite_icon.png', 'eclock_font', );
+$gear-name: 'gear';
+$gear-x: 0px;
+$gear-y: 0px;
+$gear-offset-x: 0px;
+$gear-offset-y: 0px;
+$gear-width: 228px;
+$gear-height: 203px;
+$gear-total-width: 522px;
+$gear-total-height: 298px;
+$gear-image: '../img/sprite_icon.png';
+$gear: (0px, 0px, 0px, 0px, 228px, 203px, 522px, 298px, '../img/sprite_icon.png', 'gear', );
+$logo-name: 'logo';
+$logo-x: 328px;
+$logo-y: 42px;
+$logo-offset-x: -328px;
+$logo-offset-y: -42px;
+$logo-width: 70px;
+$logo-height: 70px;
+$logo-total-width: 522px;
+$logo-total-height: 298px;
+$logo-image: '../img/sprite_icon.png';
+$logo: (328px, 42px, -328px, -42px, 70px, 70px, 522px, 298px, '../img/sprite_icon.png', 'logo', );
+$message-name: 'message';
+$message-x: 0px;
+$message-y: 203px;
+$message-offset-x: 0px;
+$message-offset-y: -203px;
+$message-width: 104px;
+$message-height: 95px;
+$message-total-width: 522px;
+$message-total-height: 298px;
+$message-image: '../img/sprite_icon.png';
+$message: (0px, 203px, 0px, -203px, 104px, 95px, 522px, 298px, '../img/sprite_icon.png', 'message', );
+$spritesheet-width: 522px;
+$spritesheet-height: 298px;
+$spritesheet-image: '../img/sprite_icon.png';
+$spritesheet-sprites: ($calendar, $clock, $eclock-font, $gear, $logo, $message, );
+$spritesheet: (522px, 298px, '../img/sprite_icon.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
