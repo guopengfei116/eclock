@@ -4,7 +4,7 @@ var path = require('path');
  * 开启一个静态文件服务器
  * */
 exports.options = {
-    port : 9800,
+    port : 9801,
     protocol : 'http',
     hostname : '0.0.0.0',
     livereload : 79513

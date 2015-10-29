@@ -1,0 +1,97 @@
+@import "../../common/sass/common";
+
+@import "icon/icon";
+@import "components/select";
+
+body {
+    min-width: 940px;
+    background-image: url("/eclock/img/eclock_background.jpg");
+    & > header, & > article, & > ul, & > .filing {
+        margin: 0 auto;
+        width: 940px;
+    }
+    & > header {
+        height: 128px;
+        line-height: 128px;
+        .icon-eclock_font {
+            margin-left: 24px;
+        }
+    }
+    & > article {
+        padding-top: 94px;
+        .eclock-view {
+            &_info {
+                float: right;
+                padding-right: 40px;
+                width: 420px;
+                color: #fff;
+                &_title {
+                    margin-bottom: 20px;
+                    line-height: 94px;
+                    font-size: 48px;
+                }
+                &_item {
+                    line-height: 30px;
+                }
+                &_download {
+                    @include radius();
+                    display: block;
+                    margin-top: 20px;
+                    padding: 14px 0;
+                    border: 5px solid #685936;
+                    width: 230px;
+                    background-color: #ffd257;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #df5930;
+                }
+            }
+        }
+        .choose-me {
+            padding-top: 96px;
+            padding-bottom: 76px;
+            &_info {
+                width: 530px;
+                color: #34495e;
+                &_title {
+                    line-height: 80px;
+                    font-size: 24px;
+                }
+                &_item {
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    & > ul {
+        @include clear-float();
+        padding-top: 12px;
+        padding-bottom: 40px;
+        color: #2c3e50;
+        li {
+            float: left;
+            width: 313px;
+            text-align: center;
+            .img {
+                height: 144px;
+                line-height: 144px;
+            }
+            .title {
+                line-height: 50px;
+                font-size: 20px;
+            }
+            .item {
+                line-height: 18px;
+                font-size: 14px;
+            }
+        }
+    }
+    & > footer {
+        line-height: 50px;
+        background-color: #ffc848;
+        text-align: center;
+    }
+}
+
