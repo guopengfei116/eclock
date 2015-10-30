@@ -5,7 +5,7 @@ var headerTpl = '<header>' +
                     '<aside class="right">' +
                         '<div class="select select-host select-btn" data-value="US">' +
                             '<div class="select_main">' +
-                                '<p class="select_main_text select_target">Einglish</p>' +
+                                '<p class="select_main_text select_target"><%= language %></p>' +
                                 '<button class="select_main_btn select_target">' +
                                     '<i class="select_main_btn_icon"></i>' +
                                 '</button>' +
@@ -15,13 +15,13 @@ var headerTpl = '<header>' +
                                     '<a class="select_content_list_value" data-value="CN">中文</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="TR">土语</a>' +
+                                    '<a class="select_content_list_value" data-value="TR">Türkçe</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="ES">西语</a>' +
+                                    '<a class="select_content_list_value" data-value="ES">español</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="PT">葡语</a>' +
+                                    '<a class="select_content_list_value" data-value="PT">português</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
                                     '<a class="select_content_list_value" data-value="US">Einglish</a>' +
@@ -38,13 +38,13 @@ var articleTpl = '<article>' +
                             '<dt class="eclock-view_info_title">Eclock</dt>' +
                             '<dd class="eclock-view_info_item"><%= introduction %></dd>' +
                             '<dd>' +
-                                '<a class="eclock-view_info_download" href=""><%= download %></a>' +
+                                '<a class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
                             '</dd>' +
                         '</dl>' +
                     '</section>' +
                     '<section class="choose-me cf">' +
                         '<dl class="left choose-me_info">' +
-                            '<dt class="choose-me_info_title">Choose me</dt>' +
+                            '<dt class="choose-me_info_title"><%= description %></dt>' +
                             '<dd class="choose-me_info_item"><%= chooseMe %></dd>' +
                          '</dl>' +
                          '<span class="icon icon-gear right choose-me_info_img"></span>' +

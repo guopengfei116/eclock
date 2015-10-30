@@ -72,10 +72,14 @@ $(function () {
     /*
     * @method 初始化
     * @* 根据Ip初始化页面
+    * @* 删除loding
     * @* 开启自定义语言切换功能
     * */
     var init = function () {
-        eclock.getIpLanguage(upTpl);
+        eclock.getIpLanguage(function (LangPack) {
+            upTpl(LangPack);
+            $('#loding').remove();
+        });
         bind();
     };
 

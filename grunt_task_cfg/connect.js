@@ -7,7 +7,9 @@ exports.options = {
     port : 9801,
     protocol : 'http',
     hostname : '0.0.0.0',
-    livereload : 79513
+    livereload : 79513,
+    open : true,
+    keepalive : true
 };
 
 /**
@@ -15,10 +17,11 @@ exports.options = {
  * */
 exports.server = {
     options : {
-        open : true,
-        keepalive : true,
         base : [
             path.basename(gruntProject.debug ? gruntProject.prd : gruntProject.dest)
+        ],
+        middleware : [
+
         ]
     }
 };
