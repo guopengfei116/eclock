@@ -30,11 +30,18 @@ if(!gruntProject.debug) {
  * */
 exports.server = {
     options : {
-        // livereload插件会刷新静态文件
+        /*
+        * 使用 middleware(中间件)，就必须关闭 LiveReload 的浏览器插件
+        * livereload插件会刷新静态文件
+        * */
         middleware : function (connect, options) {
             return [
 
-                // 把脚本，注入到静态文件中，connect会自动注入
+                /*
+                * 使用connect-livereload模块，生成一个与LiveReload脚本,
+                * 把脚本，注入到静态文件中，
+                * connect会自动注入，注释掉
+                * */
                 //require('connect-livereload')({ port: options.livereload }),
 
                 // 静态文件服务器的路径
