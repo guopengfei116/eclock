@@ -1,4 +1,6 @@
 var path = require('path');
+var serveStatic = require('serve-static');
+var serveIndex = require('serve-index');
 
 /**
  * 开启一个静态文件服务器
@@ -8,8 +10,11 @@ exports.options = {
     port : 9800,
     open : true,
     hostname : '0.0.0.0',
-    livereload : 79513,
-    keepalive : false
+    livereload : 35729,
+    keepalive : false,
+    base : [
+        path.basename(gruntProject.debug ? gruntProject.prd : gruntProject.dest)
+    ]
 };
 
 /**
@@ -25,15 +30,21 @@ if(!gruntProject.debug) {
  * */
 exports.server = {
     options : {
-        base : [
-            path.basename(gruntProject.debug ? gruntProject.prd : gruntProject.dest)
-        ]
+        // livereload插件会刷新静态文件
+        middleware : function (connect, options) {
+            return [
+
+                // 把脚本，注入到静态文件中，connect会自动注入
+                //require('connect-livereload')({ port: options.livereload }),
+
+                // 静态文件服务器的路径
+                serveStatic(options.base[0]),
+
+                // 启用目录浏览
+                serveIndex(options.base[0])
+            ]
+        }
     }
-    /*middleware : function (connect) {
-        return [
-            connect().use('/lib', connect.static('./lib'))
-        ]
-    }*/
 };
 
 console.log('connect config initialized');

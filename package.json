@@ -35,6 +35,8 @@
     "grunt-spritesmith": "^5.0.0",
     "grunt-string-replace": "^1.2.0",
     "grunt-usemin": "^3.0.0",
+    "serve-index": "^1.7.2",
+    "serve-static": "^1.10.0",
     "underscore": "^1.8.3"
   },
   "dependencies": {}
