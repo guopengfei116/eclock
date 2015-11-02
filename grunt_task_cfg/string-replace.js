@@ -19,7 +19,7 @@ exports.import = {
             expand: true,
             cwd: gruntProject.src,
             src: ['*/tpl/*.html', '*/index.html'],
-            dest: gruntProject.prd
+            dest: gruntProject.debug ? gruntProject.prd : gruntProject.dest
         }
     ]
 };
