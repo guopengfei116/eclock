@@ -38,7 +38,11 @@ var articleTpl = '<article>' +
                             '<dt class="eclock-view_info_title">Eclock</dt>' +
                             '<dd class="eclock-view_info_item"><%= introduction %></dd>' +
                             '<dd>' +
-                                '<a class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
+                                '<% if (language != "español") { %>' +
+                                    '<a class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
+                                '<% } else { %>' +
+                                    '<a style="width:100%"  class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
+                                '<% } %>' +
                             '</dd>' +
                         '</dl>' +
                     '</section>' +

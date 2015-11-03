@@ -95,7 +95,7 @@ var language = {
         chooseMe : 'Esqueceu-se das horas enquanto está sentado em frente ao PC? Queria um relógio, um calendário, queria funções de aletras de alarmes? Então esta extensão é a sua escolha!',
         download : 'Baixe para o Chrome',
         meeting : {
-            title : 'Baixe para o Chrome',
+            title : 'Lembrete de Reunião',
             details : 'Eclock é o seu organizador pessoal, pode garantir que você nunca vai perder uma reunião.'
         },
         tellTime : {

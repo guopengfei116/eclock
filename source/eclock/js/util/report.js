@@ -24,5 +24,5 @@ module.exports = function (eventName) {
         appid: APPID,
         uuid : getUuid()
     }]);
-    ga('send', 'UA-69564068-1', eventName);
+    ga('send', 'event', eventName, getUuid());
 };
