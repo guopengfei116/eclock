@@ -11,10 +11,8 @@
 }
 
 body {
-    min-width: 940px;
-    background-image: url("/eclock/img/eclock_background.jpg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    min-width: 1240px;
+    @include background-cover('/eclock/img/eclock_background.jpg');
     & > header, & > article, & > ul, & > .filing {
         margin: 0 auto;
         width: 940px;

@@ -20,9 +20,13 @@ var getUuid = function () {
 * @param {String} eventName 事件名称
 * */
 module.exports = function (eventName) {
-    mData.push(['send', eventName, {
-        appid: APPID,
-        uuid : getUuid()
-    }]);
     ga('send', 'event', eventName, getUuid());
+    try {
+        mData.push(['send', eventName, {
+            appid: APPID,
+            uuid : getUuid()
+        }]);
+    }catch (e) {
+        console.log('Mdata report errors');
+    }
 };
