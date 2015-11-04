@@ -41,7 +41,7 @@ var articleTpl = '<article>' +
                                 '<% if (language != "español") { %>' +
                                     '<a class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
                                 '<% } else { %>' +
-                                    '<a style="width:100%"  class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
+                                    '<a style="width:270px"  class="eclock-view_info_download" target="_blank" href="https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno"><%= download %></a>' +
                                 '<% } %>' +
                             '</dd>' +
                         '</dl>' +

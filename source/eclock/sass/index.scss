@@ -3,6 +3,8 @@
 @import "icon/icon";
 @import "components/select";
 
+$window-min-widht : 1240px;
+
 #loding {
     @include mask(9988);
     img {
@@ -11,11 +13,11 @@
 }
 
 body {
-    min-width: 1240px;
+    min-width: $window-min-widht;
     @include background-cover('/eclock/img/eclock_background.jpg');
     & > header, & > article, & > ul, & > .filing {
         margin: 0 auto;
-        width: 940px;
+        width: $window-min-widht;
     }
     & > header {
         height: 128px;
@@ -79,7 +81,7 @@ body {
         color: #2c3e50;
         li {
             float: left;
-            width: 313px;
+            width: $window-min-widht / 3;
             text-align: center;
             .img {
                 height: 144px;
