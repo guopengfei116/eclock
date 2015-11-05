@@ -34,34 +34,36 @@ $(function () {
     * @param {Function} fn 回调函数，传入语言包
     * */
     eclock.getIpLanguage = function (fn) {
-        $.ajax({
-            url: 'http://admin.iclock.co/getip.php',
-            type: 'GET',
-            dataType: 'json',
-            success: function (result) {
-                if(result && result.code == 1 && result.data) {
-                    var nationality = eclock.currentNationality = result.data;
-                    fn(eclock.getLanguage(nationality));
-                }else {
-                    fn(eclock.getLanguage(eclock.defaultNationality));
-                    eclock.currentNationality = eclock.defaultNationality;
-                }
-            },
-            error: function () {
-                fn(eclock.getLanguage(eclock.defaultNationality));
-                eclock.currentNationality = eclock.defaultNationality;
-            }
-        });
-
-        /*$.get('http://admin.iclock.co/getip.php', function (result) {
+        function successProcess (result) {
             if(result && result.code == 1 && result.data) {
                 var nationality = eclock.currentNationality = result.data;
                 fn(eclock.getLanguage(nationality));
             }else {
-                fn(eclock.getLanguage(eclock.defaultNationality));
-                eclock.currentNationality = eclock.defaultNationality;
+                ailureProcess();
+            }
+        }
+        function ailureProcess () {
+            fn(eclock.getLanguage(eclock.defaultNationality));
+            eclock.currentNationality = eclock.defaultNationality;
+        }
+       /* $.ajax({
+            url: 'http://admin.iclock.co/getip.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                successProcess(result);
+            },
+            error: function () {
+                ailureProcess();
             }
         });*/
+        try {
+            $.getJSON("http://admin.iclock.co/getip.php?callback=?", function(result){
+                successProcess(result);
+            });
+        }catch (e) {
+            ailureProcess();
+        }
     };
 
     // 模板对象
