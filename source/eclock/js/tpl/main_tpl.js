@@ -24,7 +24,7 @@ var headerTpl = '<header>' +
                                     '<a class="select_content_list_value" data-value="PT">português</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="US">Einglish</a>' +
+                                    '<a class="select_content_list_value" data-value="US">English</a>' +
                                 '</li>' +
                             '</ul>' +
                         '</div>' +

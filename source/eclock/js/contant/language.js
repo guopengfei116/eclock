@@ -48,7 +48,7 @@ var language = {
     TR : {
         language : 'Türkçe',
         introduction : '``Hayatta hem en hızlı hem de en yavaş, hem en uzun hem de en kısa, hem en sıradan hem de en değerli,hem en kolay önemsenmeyen hem de en çok önemsenmediğine pişman ettiren şey zamandır. ',
-        chooseMe : 'Bilgisayarın başına oturduğunuzda zamanı mı unutuyorsunuz? Görev çubuğunu gizledikten sonra saati göremediğinizde telaşa mı kapılıyorsunuz? Alarmı kullanmak mı istiyorsunuz, tarihe bakmak mı istiyorsunuz, kullanışlı alarm hatırlatma işlevine sahip olmak mı istiyorsunuz?  O zaman bu program tam size göre!',
+        chooseMe : 'Bilgisayarın başına oturduğunuzda zamanı mı unutuyorsunuz? Görev çubuğunu gizledikten sonra saati göremediğinizde telaşa mı kapılıyorsunuz? Alarm kullanmak mı istiyorsunuz, tarihe bakmak mı istiyorsunuz, kullanışlı alarm hatırlatma işlevine sahip olmak mı istiyorsunuz?  O zaman bu program tam size göre!',
         download : 'Chrome versiyonunu indir',
         meeting : {
             title : 'Toplantı hatırlatma',
@@ -114,7 +114,7 @@ var language = {
     US : {
         language : 'Einglish',
         introduction : "The world's fastest and slowest, longest and shortest, the most ordinary and the most precious, the most overlooked and most regrettable thing is the time.",
-        chooseMe : "Always forget something you are supposed to do while using PC? Want to know time when taskbar gets hidden? Look for a tool that can display time and remind you of anything?  If your answer is YES, iclock is exactly what you are looking for!",
+        chooseMe : "Always forget something you are supposed to do while using PC? Want to know time when taskbar gets hidden? Look for a tool that can display time and remind you of anything?  If your answer is YES, Eclock is exactly what you are looking for!",
         download : "Download for Chrome",
         meeting : {
             title : "Meeting Reminder",
