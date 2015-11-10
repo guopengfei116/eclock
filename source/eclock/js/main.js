@@ -46,17 +46,6 @@ $(function () {
             fn(eclock.getLanguage(eclock.defaultNationality));
             eclock.currentNationality = eclock.defaultNationality;
         }
-       /* $.ajax({
-            url: 'http://admin.iclock.co/getip.php',
-            type: 'GET',
-            dataType: 'json',
-            success: function (result) {
-                successProcess(result);
-            },
-            error: function () {
-                ailureProcess();
-            }
-        });*/
         try {
             $.getJSON("http://admin.iclock.co/getip.php?callback=?", function(result){
                 successProcess(result);

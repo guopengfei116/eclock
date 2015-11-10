@@ -1,3 +1,5 @@
+var getLanguageKey = require('./country_and_language');
+
 var language = {
 
     // 中国
@@ -22,27 +24,7 @@ var language = {
         description : "产品简介"
     },
 
-    // 日本，翻墙测试时使用的网关地址在日本
-    JP : {
-        language : '中文',
-        introduction : '世界上最快而又最慢，最长而又最短，最平凡而又最珍贵，最易被忽视而又最令人后悔的就是时间。',
-        chooseMe : '坐在电脑前就忘了时间？收起任务栏后看不到时间手忙脚乱？想要时钟，想看日期，想有贴心的闹钟提醒功能？那么这个扩展程序便是你的选择了。',
-        download : '下载Chrome版',
-        meeting : {
-            title : '会议提醒',
-            details : 'eclock是您的私人时间小秘书，保证您不错过任何重要会议。'
-        },
-        tellTime : {
-            title : '整点报时',
-            details : 'eclock为您提供整点报时，温馨提示每一个整点时刻，方便您更好地安排事情。'
-        },
-        memorandum : {
-            title : '日程备忘',
-            details : 'eclock是您的贴心私人事务管家，时刻提醒您当日日程安排，不错过任何约会或重要事情。'
-        },
-        filing : '版权所有 2015 Oasis Games. 保留一切权利. ',
-        description : "产品简介"
-    },
+
 
     // 土耳其
     TR : {
@@ -133,9 +115,20 @@ var language = {
     }
 };
 
+/*
+* 获取语言包，没有找到返回US语言包
+* */
 module.exports = function (nationality) {
     if(!nationality) {
         throw Error('Nationality is empty');
     }
-    return language[nationality];
+
+    var languageKey = getLanguageKey(nationality);
+    var langPack = language[languageKey];
+    if(!langPack) {
+        langPack = language['US'];
+    }
+
+    console.log(languageKey);
+    return langPack;
 };
