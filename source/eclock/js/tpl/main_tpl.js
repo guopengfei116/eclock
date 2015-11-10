@@ -12,19 +12,19 @@ var headerTpl = '<header>' +
                             '</div>' +
                             '<ul class="select_content">' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="CN">中文</a>' +
+                                    '<a hreflang="zh" class="select_content_list_value" data-value="CN">中文</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="TR">Türkçe</a>' +
+                                    '<a hreflang="tr" class="select_content_list_value" data-value="TR">Türkçe</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="ES">español</a>' +
+                                    '<a hreflang="es" class="select_content_list_value" data-value="ES">español</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="PT">português</a>' +
+                                    '<a hreflang="pt" class="select_content_list_value" data-value="PT">português</a>' +
                                 '</li>' +
                                 '<li class="select_content_list">' +
-                                    '<a class="select_content_list_value" data-value="US">English</a>' +
+                                    '<a hreflang="en" class="select_content_list_value" data-value="US">English</a>' +
                                 '</li>' +
                             '</ul>' +
                         '</div>' +
