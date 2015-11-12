@@ -20,7 +20,7 @@ var language = {
             title : '日程备忘',
             details : 'eclock是您的贴心私人事务管家，时刻提醒您当日日程安排，不错过任何约会或重要事情。'
         },
-        filing : '版权所有 2015 Oasis Games. 保留一切权利. ',
+        filing : '版权所有 2015 Iclock.co. 保留一切权利. ',
         description : "产品简介"
     },
 
@@ -44,7 +44,7 @@ var language = {
             title : 'Günlük ajanda',
             details : 'Eclock kişisel işlerinizi dikkatli bir şekilde takip eder, o günkü planlarınızı anında hatırlatır, herhangi bir buluşmanızı veya önemli bir işinizi asla kaçırmazsınız.'
         },
-        filing : 'Telif Hakkı © 2015 Oasis Games. Tüm hakları saklıdır.',
+        filing : 'Telif Hakkı © 2015 Iclock.co. Tüm hakları saklıdır.',
         description : "Açıklama"
     },
 
@@ -66,7 +66,7 @@ var language = {
             title : 'Agenda de Notas',
             details : 'EL mayordomo de tus asuntos personales, con recordatorios de tus planes en el Calendario, nunca olvidaras ninguna reunión o evento importante '
         },
-        filing : 'Copyright 2015 Oasis Games. Todos los derechos reservados.',
+        filing : 'Copyright 2015 Iclock.co. Todos los derechos reservados.',
         description : "Descripción del Producto"
     },
 
@@ -88,7 +88,7 @@ var language = {
             title : 'Agenda de lembretes',
             details : 'Eclock serve como organizador para que você nunca se perca nos horários das suas reuniões e os seus compromissos!'
         },
-        filing : ' Copyright © 2015 Oasis Games Inc. Todos os direitos reservados.',
+        filing : ' Copyright © 2015 Iclock.co Inc. Todos os direitos reservados.',
         description : "Descrição de produtos"
     },
 
@@ -110,7 +110,7 @@ var language = {
             title : "Schedule Assistant",
             details : "Eclock reminds you of your planned activities such as meetings or appointments."
         },
-        filing : "Copyright © 2015 Oasis Games. All Rights Reserved.",
+        filing : "Copyright © 2015 Iclock.co. All Rights Reserved.",
         description : "Description"
     }
 };

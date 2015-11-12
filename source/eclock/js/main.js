@@ -86,6 +86,16 @@ $(function () {
         });
         $('body').on('click', '.eclock-view_info_download', function (e) {
             e.stopPropagation();
+            if(!chrome.app.isInstalled) {
+                e.preventDefault();
+                chrome.webstore.install(
+                    'https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno',
+                    function () {},
+                    function (e) {
+                        window.location.href = "https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno";
+                    }
+                );
+            }
             $(window).trigger('report', 'button_click');
         });
     };
