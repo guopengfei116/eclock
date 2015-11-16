@@ -1,0 +1,27 @@
+.select {
+    @include radius(16px);
+    width: 100px;
+    background-color: #4c4949;
+    color: #fff;
+    &_main {
+        border: none;
+        &_text {
+            text-align: center;
+        }
+        &_btn {
+            &_icon {
+                border-top-color: #fff;
+            }
+        }
+    }
+    &_content {
+        @include radius(16px);
+        background-color: #4c4949;
+        border: none;
+        &_list {
+            line-height: 24px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
