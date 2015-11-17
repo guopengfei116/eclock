@@ -84,7 +84,7 @@ $(function () {
             eclock.currentNationality = nationality;
             $(window).trigger('report', 'language_switch');
         });
-        $('body').on('click', '.eclock-view_info_download', function (e) {
+        $('body').on('click', '.download-btn', function (e) {
             e.stopPropagation();
             if(!chrome.app.isInstalled) {
                 e.preventDefault();
@@ -116,4 +116,3 @@ $(function () {
         $(window).trigger('report', 'visit');
     }();
 });
-

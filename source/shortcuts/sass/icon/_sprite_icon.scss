@@ -33,17 +33,17 @@ $cn-flag-total-width: 382px;
 $cn-flag-total-height: 249px;
 $cn-flag-image: '../img/sprite_icon.png';
 $cn-flag: (323px, 61px, -323px, -61px, 19px, 13px, 382px, 249px, '../img/sprite_icon.png', 'cn_flag', );
-$donwload-name: 'donwload';
-$donwload-x: 253px;
-$donwload-y: 61px;
-$donwload-offset-x: -253px;
-$donwload-offset-y: -61px;
-$donwload-width: 32px;
-$donwload-height: 29px;
-$donwload-total-width: 382px;
-$donwload-total-height: 249px;
-$donwload-image: '../img/sprite_icon.png';
-$donwload: (253px, 61px, -253px, -61px, 32px, 29px, 382px, 249px, '../img/sprite_icon.png', 'donwload', );
+$download-name: 'download';
+$download-x: 253px;
+$download-y: 61px;
+$download-offset-x: -253px;
+$download-offset-y: -61px;
+$download-width: 32px;
+$download-height: 29px;
+$download-total-width: 382px;
+$download-total-height: 249px;
+$download-image: '../img/sprite_icon.png';
+$download: (253px, 61px, -253px, -61px, 32px, 29px, 382px, 249px, '../img/sprite_icon.png', 'download', );
 $drawer-name: 'drawer';
 $drawer-x: 253px;
 $drawer-y: 0px;
@@ -157,7 +157,7 @@ $us-flag: (304px, 61px, -304px, -61px, 19px, 13px, 382px, 249px, '../img/sprite_
 $spritesheet-width: 382px;
 $spritesheet-height: 249px;
 $spritesheet-image: '../img/sprite_icon.png';
-$spritesheet-sprites: ($arrow-down, $cn-flag, $donwload, $drawer, $es-flag, $google, $logo, $logo-font, $logo-footer, $people, $pt-flag, $tr-flag, $us-flag, );
+$spritesheet-sprites: ($arrow-down, $cn-flag, $download, $drawer, $es-flag, $google, $logo, $logo-font, $logo-footer, $people, $pt-flag, $tr-flag, $us-flag, );
 $spritesheet: (382px, 249px, '../img/sprite_icon.png', $spritesheet-sprites, );
 
 /*

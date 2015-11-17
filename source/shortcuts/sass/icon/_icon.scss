@@ -10,7 +10,7 @@
 }
 
 .icon {
-    $icons : ($calendar, $clock, $eclock_font, $gear, $logo, $message);
+    $icons : ($arrow_down, $cn_flag, $download, $drawer, $es_flag, $google, $logo, $logo_font, $logo_footer, $people, $pt_flag, $tr_flag, $us_flag);
     @include inline-block();
     @include sprites($icons);
 }

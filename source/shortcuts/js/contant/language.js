@@ -5,112 +5,88 @@ var language = {
     // 中国
     CN : {
         language : '中文',
-        introduction : '世界上最快而又最慢，最长而又最短，最平凡而又最珍贵，最易被忽视而又最令人后悔的就是时间。',
-        chooseMe : '坐在电脑前就忘了时间？收起任务栏后看不到时间手忙脚乱？想要时钟，想看日期，想有贴心的闹钟提醒功能？那么这个扩展程序便是你的选择了。',
+        quotation : '想要快速找到自己最常用的网站？',
+        introduction : 'My Shortcuts就可以帮您轻松解决这些问题，帮您整理各类网址，实现网址类管理，做您贴心的网址管家，选择它没错哦。',
         download : '下载Chrome版',
-        meeting : {
-            title : '会议提醒',
-            details : 'eclock是您的私人时间小秘书，保证您不错过任何重要会议。'
+        google : {
+            title : 'google常用网址管理',
+            details : '在该类目下，您可以添加google类的各项网址，为您提供八个默认的google常用的网址，您也可以自行添加自己常用的google网址。'
         },
-        tellTime : {
-            title : '整点报时',
-            details : 'eclock为您提供整点报时，温馨提示每一个整点时刻，方便您更好地安排事情。'
+        social : {
+            title : '社交产品网址管理',
+            details : '在该类目下，您可以添加各类社交产品网址，为您提供四个默认的网址，您也可以自行添加自己个人常用的社交网站。'
         },
-        memorandum : {
-            title : '日程备忘',
-            details : 'eclock是您的贴心私人事务管家，时刻提醒您当日日程安排，不错过任何约会或重要事情。'
+        drawer : {
+            title : '个人常用网址管理',
+            details : '在该类目下，您可以依据您个人的使用习惯，添加各项网址，为您提供四个默认的网址。'
         },
-        filing : '版权所有 2015 Iclock.co. 保留一切权利. ',
+        filing : '版权所有 goextension.com. 保留一切权利. ',
         description : "产品简介"
     },
-
-
 
     // 土耳其
     TR : {
         language : 'Türkçe',
-        introduction : '``Hayatta hem en hızlı hem de en yavaş, hem en uzun hem de en kısa, hem en sıradan hem de en değerli,hem en kolay önemsenmeyen hem de en çok önemsenmediğine pişman ettiren şey zamandır. ',
-        chooseMe : 'Bilgisayarın başına oturduğunuzda zamanı mı unutuyorsunuz? Görev çubuğunu gizledikten sonra saati göremediğinizde telaşa mı kapılıyorsunuz? Alarm kullanmak mı istiyorsunuz, tarihe bakmak mı istiyorsunuz, kullanışlı alarm hatırlatma işlevine sahip olmak mı istiyorsunuz?  O zaman bu program tam size göre!',
-        download : 'Chrome versiyonunu indir',
-        meeting : {
-            title : 'Toplantı hatırlatma',
-            details : 'Eclock adeta kişisel bir sekreteriniz gibi hiç bir önemli toplantınızı kaçırmamanızı sağlar.'
+        quotation : 'Sitelerini hızlı bulmak ister misin？',
+        introduction : 'My Shortcuts, siteleri kategorilere ayırarak kolayca yönetilmesini sağlar.',
+        download : 'Chrome Sürümünü İndir',
+        google : {
+            title : 'Google Sitelerinin Yönetimi',
+            details : 'Bu kategori altında, sık kullandığınız google sitelerini ekleyebilirsiniz. Sizin için sık kullanılan sekiz adet  google sitesi belirledik, sizde sık kullandığınız google sitelerini ekleyebilirsiniz. '
         },
-        tellTime : {
-            title : 'Saat başı zaman bildirme',
-            details : 'Eclock saat başı zaman bildirme özelliği,her saat başında size zamanı hatırlatarak,işlerinizi yaparken zamanızı ayarlamanızı kolaylaştırır.'
+        social : {
+            title : 'Sosyal Platform Sitelerinin Yönetimi',
+            details : 'Bu kategori altında, sosyal platform sitelerini ekleyebilirsiniz. Sizin için dört adet popüler sosyal platform sitesi belirledik, sizde sık kullandığınız sosyal platform sitelerini ekleyebilirsiniz. '
         },
-        memorandum : {
-            title : 'Günlük ajanda',
-            details : 'Eclock kişisel işlerinizi dikkatli bir şekilde takip eder, o günkü planlarınızı anında hatırlatır, herhangi bir buluşmanızı veya önemli bir işinizi asla kaçırmazsınız.'
+        drawer : {
+            title : 'Favori Sitelerin Yönetimi',
+            details : 'Bu kategori altında,  sık kullandığınız favori siteleri ekleyebilirsiniz. Sizin için popüler dört  site belirledik.  '
         },
-        filing : 'Telif Hakkı © 2015 Iclock.co. Tüm hakları saklıdır.',
+        filing : 'Telif Hakkı goextension.com. Tüm hakları saklıdır.',
         description : "Açıklama"
-    },
-
-    // 西班牙
-    ES : {
-        language : 'español',
-        introduction : 'Es el más rápido y el más lento de este Mundo, el más largo y también el más corto, el más extraordinario y el más precioso regalo de este mundo. Las personas al olvidarse de él se arrepienten, el tiempo.',
-        chooseMe : '¿Antes de sentarte frente al ordenador, te olvidaste del tiempo? Después de ocultar la barra de tareas, ¿no ves qué hora es? ¿Quiéres un reloj, quiéres ver la fecha, quería tener un buen sistema de alertas? ¡Entonces esta extensión es tu elección!',
-        download : 'Descargar la versión Chrome',
-        meeting : {
-            title : 'Recordatorio de Reunión',
-            details : 'Tu secretario personal del tiempo, le garantiza que no perderá ninguna importante reunión'
-        },
-        tellTime : {
-            title : 'Hora completa',
-            details : 'Hora completa, recordatorios cada hora para ayudarte a organizar mejor tus eventos del día.'
-        },
-        memorandum : {
-            title : 'Agenda de Notas',
-            details : 'EL mayordomo de tus asuntos personales, con recordatorios de tus planes en el Calendario, nunca olvidaras ninguna reunión o evento importante '
-        },
-        filing : 'Copyright 2015 Iclock.co. Todos los derechos reservados.',
-        description : "Descripción del Producto"
     },
 
     // 葡萄牙
     PT : {
         language : 'português',
-        introduction : 'Foi-se o tempo que é mais rápido mas mais lento, maior mas menor, mais comum mas mais precioso, mais negligenciado e mais lamentável no mundo.',
-        chooseMe : 'Esqueceu-se das horas enquanto está sentado em frente ao PC? Queria um relógio, um calendário, queria funções de aletras de alarmes? Então esta extensão é a sua escolha!',
+        quotation : 'Encontre rápido sites mais acessados?',
+        introduction : 'O My shortcuts é sua melhor escolha que vão servir para organizar seus sites, como seu organizador de endereços.',
         download : 'Baixe para o Chrome',
-        meeting : {
-            title : 'Lembrete de Reunião',
-            details : 'Eclock é o seu organizador pessoal, pode garantir que você nunca vai perder uma reunião.'
+        google : {
+            title : 'Gestão de sites mais acessados do Google',
+            details : 'Pode adicionar os endereços do Google ou os mais acessados, aqui proporcionamos-lhe oito endereços padrões.   '
         },
-        tellTime : {
-            title : 'Tocar em hora cheia',
-            details : 'Eclock tem o função de tocar em hora cheia, para facilitar a sua vida, alarme emitido pelo produto toda vez que é indicada cada hora cheia. '
+        social : {
+            title : 'Gestão de sites das redes sociais',
+            details : 'Pode adicionar os endereços das redes sociais ou das mais acessadas, aqui proporcionamos-lhe quatro endereços padrões.   '
         },
-        memorandum : {
-            title : 'Agenda de lembretes',
-            details : 'Eclock serve como organizador para que você nunca se perca nos horários das suas reuniões e os seus compromissos!'
+        drawer : {
+            title : 'Gestão de sites mais acessados pessoais',
+            details : 'Pode adicionar os endereços com os  seus hábitos pessoais, aqui proporcionamos-lhe quatro endereços padrões.   '
         },
-        filing : ' Copyright © 2015 Iclock.co Inc. Todos os direitos reservados.',
+        filing : ' Copyright goextension.com.Todos os direitos reservados.',
         description : "Descrição de produtos"
     },
 
     // 美国
     US : {
-        language : 'Einglish',
-        introduction : "The world's fastest and slowest, longest and shortest, the most ordinary and the most precious, the most overlooked and most regrettable thing is the time.",
-        chooseMe : "Always forget something you are supposed to do while using PC? Want to know time when taskbar gets hidden? Look for a tool that can display time and remind you of anything?  If your answer is YES, Eclock is exactly what you are looking for!",
-        download : "Download for Chrome",
-        meeting : {
-            title : "Meeting Reminder",
-            details : "Eclock helps you manage your time to ensure you'll never miss a meeting."
+        language : 'English',
+        quotation : 'Want fast visit beloved sites?',
+        introduction : 'My Shortcuts can let you create shortcuts and quickly access your most-visited sites. Try It Now!',
+        download : 'Download for Chrome',
+        google : {
+            title : 'Utilize Google Tools',
+            details : 'There are 8 default shortcuts about the services provided by Google in My Shortcuts. You could also add additional shortcuts for other Google services like Analytics and Earth.'
         },
-        tellTime : {
-            title : "Countdown Timer",
-            details : "Eclock makes your work more productive by using built-in alarm function."
+        social : {
+            title : 'Expand Social Circle',
+            details : "My Shortcuts lists 4 globally popular social networking sites including Facebook and Twitter. Let's add more shortcuts for SNS to expand your social circle."
         },
-        memorandum : {
-            title : "Schedule Assistant",
-            details : "Eclock reminds you of your planned activities such as meetings or appointments."
+        drawer : {
+            title : 'Manage Favorite Sites',
+            details : 'All of your favorite sites could be added as a shortcut according to your browsing preference. The 4 default shortcuts for the most visited sites worldwide, such as Amazon and YouTube, are available in My Shortcuts.'
         },
-        filing : "Copyright © 2015 Iclock.co. All Rights Reserved.",
+        filing : 'Copyright goextension.com. All Rights Reserved.',
         description : "Description"
     }
 };

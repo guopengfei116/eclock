@@ -1,4 +1,4 @@
-var APPID = 1313260295;
+var APPID = 3800047841;
 
 // 初始化ga上报
 ga('create', 'UA-69564068-1', 'auto');
