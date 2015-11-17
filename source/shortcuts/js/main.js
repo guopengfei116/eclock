@@ -74,7 +74,7 @@ $(function () {
      * @* 下载按钮点击时上报'button_click'事件
      * */
     var bind = function () {
-        $('body').on('click', '.select_content_list_value', function (e) {
+        $('body').on('click', '.select_options_target', function (e) {
             e.stopPropagation();
             var nationality = $(this).data('value');
             if(nationality == eclock.currentNationality) {
@@ -91,7 +91,7 @@ $(function () {
                 chrome.webstore.install(
                     'https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno',
                     function () {},
-                    function (e) {
+                    function () {
                         window.location.href = "https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno";
                     }
                 );

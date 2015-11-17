@@ -23,7 +23,7 @@ $.extend(Select.prototype, {
     textarea : '.select_main_textarea',
     textarea_value : '.select_main_textarea-value',
     text : '.select_main_text',
-    optionsTarget : '.select_content_list_value',
+    optionsTarget : '.select_options_target',
     optionsSelector : '.select_content_list',
     initialized : false,
 
@@ -73,7 +73,9 @@ $.extend(Select.prototype, {
             var $this = $(this);
             var $select = $this.parents(self.selector);
             var val = $this.data('value');
-
+console.log(this);
+console.log(val);
+console.log($select);
             $select.data('value', val).toggleClass('select-active');
             $select.find(self.textarea).val($this.text());
             $select.find('input' + self.text).val($this.text());

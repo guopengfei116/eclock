@@ -4,7 +4,7 @@ var headerTpl = '<header> \
                         <a class="icon icon-logo"></a> \
                         <aside class="right"> \
                             <div class="select select-host select-btn" data-value="US"> \
-                            <div class="select_main"> \
+                            <div class="select_main select_target"> \
                                 <% if (language === "中文") { %> \
                                     <span class="icon icon-cn_flag"></span> \
                                 <% } else if (language === "Türkçe") { %>\
@@ -14,27 +14,27 @@ var headerTpl = '<header> \
                                 <% } else if (language === "English") { %> \
                                     <span class="icon icon-us_flag"></span> \
                                 <% } %> \
-                                <p class="select_main_text select_target"><%= language %></p> \
-                                <button class="select_main_btn select_target"> \
-                                    <i class="icon icon-arrow"></i> \
+                                <span class="select_main_text"><%= language %></span> \
+                                <button class="select_main_btn"> \
+                                    <i class="icon icon-arrow_down"></i> \
                                 </button> \
                             </div> \
                             <ul class="select_content"> \
-                                <li class="select_content_list"> \
+                                <li class="select_content_list select_options_target" data-value="CN"> \
                                     <span class="icon icon-cn_flag"></span> \
-                                    <a class="select_content_list_value" data-value="CN">中文</a> \
+                                    <a class="select_content_list_value">中文</a> \
                                 </li> \
-                                <li class="select_content_list"> \
+                                <li class="select_content_list select_options_target" data-value="TR"> \
                                     <span class="icon icon-tr_flag"></span> \
-                                    <a class="select_content_list_value" data-value="TR">Türkçe</a> \
+                                    <a class="select_content_list_value">Türkçe</a> \
                                 </li> \
-                                <li class="select_content_list"> \
+                                <li class="select_content_list select_options_target" data-value="PT"> \
                                     <span class="icon icon-pt_flag"></span> \
-                                    <a class="select_content_list_value" data-value="PT">português</a> \
+                                    <a class="select_content_list_value">português</a> \
                                 </li> \
-                                <li class="select_content_list"> \
+                                <li class="select_content_list select_options_target" data-value="US"> \
                                     <span class="icon icon-us_flag"></span> \
-                                    <a class="select_content_list_value" data-value="US">Einglish</a> \
+                                    <a class="select_content_list_value">Einglish</a> \
                                 </li> \
                             </ul> \
                             </div> \

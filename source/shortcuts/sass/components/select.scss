@@ -1,27 +1,33 @@
 .select {
-    @include radius(16px);
-    width: 100px;
-    background-color: #4c4949;
-    color: #fff;
+    @include radius();
+    width: 150px;
+    border: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #3f3f3f;
     &_main {
+        padding: 0 8px;
         border: none;
+        height: 38px;
+        line-height: 38px;
         &_text {
-            text-align: center;
+            padding-left: 8px;
         }
         &_btn {
-            &_icon {
-                border-top-color: #fff;
-            }
+            height: 38px;
+            line-height: 38px;
         }
     }
     &_content {
-        @include radius(16px);
-        background-color: #4c4949;
-        border: none;
+        @include radius();
+        box-shadow: 3px 3px #0b87d6;
         &_list {
-            line-height: 24px;
-            text-align: center;
-            color: #fff;
+            padding: 0 8px;
+            line-height: 36px;
+            text-align: left;
+            &_value {
+                @include inline-block();
+                padding-left: 8px;
+            }
         }
     }
 }
