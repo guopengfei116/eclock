@@ -73,9 +73,7 @@ $.extend(Select.prototype, {
             var $this = $(this);
             var $select = $this.parents(self.selector);
             var val = $this.data('value');
-console.log(this);
-console.log(val);
-console.log($select);
+
             $select.data('value', val).toggleClass('select-active');
             $select.find(self.textarea).val($this.text());
             $select.find('input' + self.text).val($this.text());

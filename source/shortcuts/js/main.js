@@ -89,10 +89,10 @@ $(function () {
             if(!chrome.app.isInstalled) {
                 e.preventDefault();
                 chrome.webstore.install(
-                    'https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno',
+                    'https://chrome.google.com/webstore/detail/cacokjfcegfgomgdbkneeeleemimepcj',
                     function () {},
                     function () {
-                        window.location.href = "https://chrome.google.com/webstore/detail/hnplpedplphoahacdlbcepdokaakokno";
+                        window.location.href = "https://chrome.google.com/webstore/detail/cacokjfcegfgomgdbkneeeleemimepcj";
                     }
                 );
             }
