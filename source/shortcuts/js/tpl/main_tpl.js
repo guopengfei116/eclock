@@ -38,7 +38,7 @@ var headerTpl = '<header> \
                                 </li> \
                                 <li class="select_content_list select_options_target" data-value="US"> \
                                     <span class="icon icon-us_flag"></span> \
-                                    <a class="select_content_list_value">Einglish</a> \
+                                    <a class="select_content_list_value">English</a> \
                                 </li> \
                             </ul> \
                             </div> \

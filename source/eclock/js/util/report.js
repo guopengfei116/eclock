@@ -14,9 +14,12 @@ var getUuid = function () {
 
     if(uuid) {
         return uuid;
+    }else {
+        uuid = 'eclock' + new Date().getTime() + Math.round(Math.random() * Math.pow(10, 10));
+        localStorage && localStorage.setItem('eclock_uuid', uuid);
     }
 
-    return 'eclock' + new Date().getTime() + Math.round(Math.random() * Math.pow(10, 10));
+    return uuid;
 };
 
 /*
