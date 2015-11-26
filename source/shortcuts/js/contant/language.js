@@ -46,6 +46,28 @@ var language = {
         description : "Açıklama"
     },
 
+    // 西班牙
+    ES : {
+        language : 'español',
+        quotation : '?Deseas encontrar y acceder más rápido a las Páginas de Internet que más visitas?',
+        introduction : 'Mis Atajos pueden ayudarte a resolver fácilmente estos problemas y a organizar todo tipo de páginas. Haz de él tu administrador de sitios de internet, no te arrepentirás.',
+        download : 'Chrome Sürümünü İndir',
+        google : {
+            title : 'Administrador de sitios favoritos de google',
+            details : 'En esta área podrás agregar los sitios favoritos buscados en google, te proveemos 8 sitios más buscados en google, sin embargo podrás agregar otros.'
+        },
+        social : {
+            title : 'Administrador de sitios de redes sociales',
+            details : 'En esta área podrás agregar los sitios de redes sociales, te proveemos 4 sitios más usados, sin embargo podrás agregar los tuyos.'
+        },
+        drawer : {
+            title : 'Administrador de sitios favoritos personales',
+            details : 'En esta área podrás agregar en todo momento los sitios que más usas, sin embargo te proveemos 4 sitios más buscados.'
+        },
+        filing : 'Copyright goextension.com. Todos los derechos reservados.',
+        description : "Açıklama"
+    },
+
     // 葡萄牙
     PT : {
         language : 'português',

@@ -28,6 +28,10 @@ var headerTpl = '<header> \
                                     <span class="icon icon-tr_flag"></span> \
                                     <a class="select_content_list_value">Türkçe</a> \
                                 </li> \
+                                <li class="select_content_list select_options_target" data-value="ES"> \
+                                    <span class="icon icon-us_flag"></span> \
+                                    <a class="select_content_list_value">español</a> \
+                                </li> \
                                 <li class="select_content_list select_options_target" data-value="PT"> \
                                     <span class="icon icon-pt_flag"></span> \
                                     <a class="select_content_list_value">português</a> \

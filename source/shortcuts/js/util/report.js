@@ -16,7 +16,7 @@ var getUuid = function () {
         return uuid;
     }
 
-    return 'eclock' + new Date().getTime() + Math.round(Math.random() * Math.pow(10, 10));
+    return 'shortcuts' + new Date().getTime() + Math.round(Math.random() * Math.pow(10, 10));
 };
 
 /*

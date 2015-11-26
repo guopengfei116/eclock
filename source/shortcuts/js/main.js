@@ -46,13 +46,16 @@ $(function () {
             fn(eclock.getLanguage(eclock.defaultNationality));
             eclock.currentNationality = eclock.defaultNationality;
         }
-        try {
-            $.getJSON("http://admin.iclock.co/getip.php?callback=?", function(result){
-                successProcess(result);
-            });
-        }catch (e) {
-            ailureProcess();
-        }
+        $.ajax({
+            url : "http://admin.iclock.co/getip.php?callback=?",
+            type : 'GET',
+            success : successProcess,
+            dataType : 'jsonp',
+            timeout : 5000,
+            error : function (error) {
+                ailureProcess();
+            }
+        });
     };
 
     // 模板对象
@@ -86,8 +89,10 @@ $(function () {
         });
         $('body').on('click', '.download-btn', function (e) {
             e.stopPropagation();
-            if(!chrome.app.isInstalled) {
-                e.preventDefault();
+            e.preventDefault();
+            if(!window.chrome || !window.chrome.app.isInstalled) {
+                window.open("https://chrome.google.com/webstore/detail/cacokjfcegfgomgdbkneeeleemimepcj");
+            }else {
                 chrome.webstore.install(
                     'https://chrome.google.com/webstore/detail/cacokjfcegfgomgdbkneeeleemimepcj',
                     function () {},

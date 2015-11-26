@@ -7,10 +7,10 @@ var serveIndex = require('serve-index');
  * */
 exports.options = {
     protocol : 'http',
-    port : 9800,
+    port : 9700,
     open : true,
     hostname : '0.0.0.0',
-    livereload : 35729,
+    livereload : 35700,
     keepalive : false,
     base : [
         path.basename(gruntProject.debug ? gruntProject.prd : gruntProject.dest)
@@ -21,7 +21,7 @@ exports.options = {
  * 非调试模式下
  * */
 if(!gruntProject.debug) {
-    exports.options.port = 9801;
+    exports.options.port = 9701;
     exports.options.keepalive = true;
 }
 

@@ -5,9 +5,9 @@ var COUNTRY_AND_LANGUAGE = {
     'TR' : [
         'TR'
     ],
-    /*'ES' : [
+    'ES' : [
         'ES', 'MX', 'CO'
-    ],*/
+    ],
     'PT' : [
         'PT', 'BR'
     ],
