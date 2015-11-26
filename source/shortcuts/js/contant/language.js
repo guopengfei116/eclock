@@ -51,7 +51,7 @@ var language = {
         language : 'español',
         quotation : '?Deseas encontrar y acceder más rápido a las Páginas de Internet que más visitas?',
         introduction : 'Mis Atajos pueden ayudarte a resolver fácilmente estos problemas y a organizar todo tipo de páginas. Haz de él tu administrador de sitios de internet, no te arrepentirás.',
-        download : 'Chrome Sürümünü İndir',
+        download : 'Descargar la versión Chrome',
         google : {
             title : 'Administrador de sitios favoritos de google',
             details : 'En esta área podrás agregar los sitios favoritos buscados en google, te proveemos 8 sitios más buscados en google, sin embargo podrás agregar otros.'
@@ -75,16 +75,16 @@ var language = {
         introduction : 'O My shortcuts é sua melhor escolha que vão servir para organizar seus sites, como seu organizador de endereços.',
         download : 'Baixe para o Chrome',
         google : {
-            title : 'Gestão de sites mais acessados do Google',
-            details : 'Pode adicionar os endereços do Google ou os mais acessados, aqui proporcionamos-lhe oito endereços padrões.   '
+            title : 'Organizador de sites mais acessados do Google',
+            details : 'Pode adicionar os endereços do Google ou os mais acessados, aqui proporcionamos-lhe oito endereços padrões.'
         },
         social : {
-            title : 'Gestão de sites das redes sociais',
-            details : 'Pode adicionar os endereços das redes sociais ou das mais acessadas, aqui proporcionamos-lhe quatro endereços padrões.   '
+            title : 'Organizador de sites das redes sociais',
+            details : 'Pode adicionar os endereços das redes sociais ou das mais acessadas, aqui proporcionamos-lhe quatro endereços padrões.'
         },
         drawer : {
-            title : 'Gestão de sites mais acessados pessoais',
-            details : 'Pode adicionar os endereços com os  seus hábitos pessoais, aqui proporcionamos-lhe quatro endereços padrões.   '
+            title : 'Organizador de sites mais acessados pessoais',
+            details : 'Pode adicionar os endereços com os  seus hábitos pessoais, aqui proporcionamos-lhe quatro endereços padrões.'
         },
         filing : ' Copyright goextension.com.Todos os direitos reservados.',
         description : "Descrição de produtos"
@@ -102,13 +102,13 @@ var language = {
         },
         social : {
             title : 'Expand Social Circle',
-            details : "My Shortcuts lists 4 globally popular social networking sites including Facebook and Twitter. Let's add more shortcuts for SNS to expand your social circle."
+            details : "You can create shortcuts for your favorite sites. The 4 default shortcuts for popular sites, such as Amazon and YouTube, are available in My Shortcuts"
         },
         drawer : {
             title : 'Manage Favorite Sites',
             details : 'All of your favorite sites could be added as a shortcut according to your browsing preference. The 4 default shortcuts for the most visited sites worldwide, such as Amazon and YouTube, are available in My Shortcuts.'
         },
-        filing : 'Copyright goextension.com. All Rights Reserved.',
+        filing : 'Copyright © 2015 goextension.com. All Rights Reserved.',
         description : "Description"
     }
 };
